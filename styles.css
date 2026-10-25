@@ -168,6 +168,9 @@ html:not(.js) .frase, html:not(.js) .escena__pista, .escena.sin-3d .frase, .esce
 /* Pie */
 .pie { max-width: var(--ancho); margin: 0 auto; padding: 32px var(--gutter) 48px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--suave); font-size: 14px; border-top: 1px solid var(--linea); }
 .pie__marca { letter-spacing: .12em; color: var(--tinta); }
+.pie__autor { flex-basis: 100%; font-size: 13px; opacity: .8; }
+.pie__autor a { color: var(--acento); text-decoration: none; border-bottom: 1px solid rgba(201, 167, 124, .4); }
+.pie__autor a:hover { border-color: var(--acento); }
 
 /* Páginas legal y 404 */
 .legal { max-width: 760px; margin: 0 auto; padding: 120px var(--gutter) 64px; }
