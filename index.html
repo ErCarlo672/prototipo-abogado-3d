@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nombre Apellidos · Abogado de familia y herencias en [Ciudad]</title>
+  <meta name="description" content="Abogado de familia y herencias en [Ciudad]. Testamentos, herencias, divorcios y custodia con un trato cercano. Primera consulta sin compromiso: +34 000 000 000.">
+  <link rel="canonical" href="https://ercarlo672.github.io/prototipo-abogado-3d/">
+  <meta property="og:title" content="Nombre Apellidos · Abogado de familia y herencias en [Ciudad]">
+  <meta property="og:description" content="Testamentos, herencias, divorcios y custodia con un trato cercano.">
+  <meta property="og:url" content="https://ercarlo672.github.io/prototipo-abogado-3d/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ercarlo672.github.io/prototipo-abogado-3d/assets/hero.jpg">
+  <meta name="theme-color" content="#0b0a09">
+  <link rel="icon" href="favicon.svg?v=20261025" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/urbanist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=20261025b">
+  <script>document.documentElement.classList.add("js")</script>
+  <script type="importmap">{ "imports": { "three": "./assets/vendor/three.module.min.js" } }</script>
+  <link rel="modulepreload" href="assets/vendor/three.module.min.js">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Nombre Apellidos Abogado",
+    "url": "https://ercarlo672.github.io/prototipo-abogado-3d/",
+    "image": "https://ercarlo672.github.io/prototipo-abogado-3d/assets/hero.jpg",
+    "telephone": "+34000000000",
+    "email": "correo@ejemplo.com",
+    "address": { "@type": "PostalAddress", "streetAddress": "Dirección del despacho", "postalCode": "00000", "addressLocality": "[Ciudad]", "addressCountry": "ES" },
+    "areaServed": "[Ciudad]",
+    "knowsAbout": ["Derecho de familia", "Herencias", "Testamentos", "Divorcios", "Custodia"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="./">NOMBRE APELLIDOS</a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a class="btn btn--claro" href="#contacto">Contacto</a>
+  </header>
+
+  <main id="main">
+    <!-- Portada en 3D: la sección mide varias pantallas y el lienzo queda fijo mientras se hace scroll -->
+    <section class="escena" id="escena">
+      <div class="escena__fija">
+        <canvas id="lienzo" aria-hidden="true"></canvas>
+        <div class="escena__velo" aria-hidden="true"></div>
+
+        <p class="frase frase--1" data-desde="0" data-hasta="0.24">Cada familia tiene<br>su propia historia.</p>
+        <p class="frase frase--2" data-desde="0.28" data-hasta="0.52">A veces, una herencia<br>o una separación lo desequilibra todo.</p>
+        <p class="frase frase--3" data-desde="0.56" data-hasta="0.78">Mi trabajo es devolver<br>el equilibrio.</p>
+
+        <div class="escena__final" data-desde="0.84" data-hasta="1">
+          <p class="etiqueta">Abogado de familia y herencias · [Ciudad]</p>
+          <h1>Protege a tu familia y tu patrimonio con tranquilidad</h1>
+          <p class="hero__sub">Soy Nombre Apellidos. Te ayudo a ordenar tu herencia, tu testamento o tu separación con un plan claro y sin letra pequeña.</p>
+          <div class="hero__acciones">
+            <a class="btn btn--claro" href="#contacto">Pide una primera consulta</a>
+            <p class="hero__tel">O llama al <a href="tel:+34000000000">000 000 000</a></p>
+          </div>
+        </div>
+
+        <div class="escena__pista" aria-hidden="true"><span>Desliza</span><i></i></div>
+      </div>
+    </section>
+
+    <section class="cita aparece">
+      <blockquote>
+        <p>“Si no decides tú qué pasa con lo que has construido, lo decidirá la ley por ti. Un buen plan evita años de conflictos a los que más quieres.”</p>
+        <footer><strong>Nombre Apellidos</strong><span>Abogado colegiado nº 0000</span></footer>
+      </blockquote>
+      <ul class="datos">
+        <li><strong>XX+</strong><span>años acompañando a familias en [Ciudad] y provincia.</span></li>
+        <li><strong>XXX+</strong><span>herencias, testamentos y separaciones resueltas.</span></li>
+        <li><strong>XX h</strong><span>como máximo para responder a tu primera consulta.</span></li>
+      </ul>
+    </section>
+
+    <section class="intro">
+      <img class="intro__fondo" src="assets/despacho.jpg" alt="" width="1200" height="800" loading="lazy" aria-hidden="true">
+      <p>Una herencia, un divorcio o un testamento llegan casi siempre en un momento delicado. Mi trabajo es que entiendas cada paso, sepas lo que cuesta desde el principio y tengas a alguien que te coge el teléfono.</p>
+    </section>
+
+    <section class="servicios" id="servicios">
+      <div class="cabecera aparece">
+        <p class="etiqueta">Servicios</p>
+        <h2>En qué te puedo ayudar</h2>
+      </div>
+      <div class="tarjetas">
+        <article class="tarjeta aparece" data-inclina>
+          <span class="tarjeta__num">01</span>
+          <h3>Testamentos</h3>
+          <p>Redactamos tu testamento para que tus bienes vayan a quien tú quieres y sin dudas para tu familia.</p>
+        </article>
+        <article class="tarjeta aparece" data-inclina>
+          <span class="tarjeta__num">02</span>
+          <h3>Herencias</h3>
+          <p>Aceptación, reparto, impuesto de sucesiones y notaría. Me encargo del papeleo de principio a fin.</p>
+        </article>
+        <article class="tarjeta aparece" data-inclina>
+          <span class="tarjeta__num">03</span>
+          <h3>Divorcios y separaciones</h3>
+          <p>De mutuo acuerdo o contencioso, buscando siempre la salida más rápida y menos dolorosa.</p>
+        </article>
+        <article class="tarjeta aparece" data-inclina>
+          <span class="tarjeta__num">04</span>
+          <h3>Custodia y visitas</h3>
+          <p>Defendemos el interés de tus hijos con un régimen de custodia y visitas justo y realista.</p>
+        </article>
+        <article class="tarjeta aparece" data-inclina>
+          <span class="tarjeta__num">05</span>
+          <h3>Pensiones</h3>
+          <p>Reclamación, revisión o modificación de pensiones de alimentos y compensatorias.</p>
+        </article>
+        <article class="tarjeta aparece" data-inclina>
+          <span class="tarjeta__num">06</span>
+          <h3>Mediación familiar</h3>
+          <p>Cuando hay voluntad de acuerdo, negociamos para evitar el juicio y ahorrar tiempo y dinero.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre-mi">
+      <div class="sobre__marco" data-inclina><img class="sobre__foto" src="assets/hero.jpg" alt="Nombre Apellidos, abogado, con los brazos cruzados en su despacho" width="1800" height="1800" loading="lazy"></div>
+      <div class="sobre__texto aparece">
+        <p class="etiqueta">Sobre mí</p>
+        <h2>Experiencia legal con trato de tú a tú</h2>
+        <p>Llevo más de XX años ayudando a familias de [Ciudad] en algunas de las decisiones más importantes de su vida. Trabajo solo, así que hablarás siempre conmigo y no con un becario distinto cada semana.</p>
+        <p>Antes de empezar te doy un presupuesto cerrado por escrito. Sin sorpresas.</p>
+        <ul class="sellos">
+          <li>Colegiado en el Ilustre Colegio de Abogados de [Ciudad]</li>
+          <li>Licenciado en Derecho por la Universidad de [Ciudad]</li>
+          <li>Consultas presenciales y por videollamada</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Opiniones de ejemplo: sustituir por reseñas reales de Google antes de publicar -->
+    <section class="opiniones" id="opiniones">
+      <div class="cabecera aparece">
+        <p class="etiqueta">Opiniones</p>
+        <h2>Lo que dicen mis clientes</h2>
+      </div>
+      <div class="cinta" aria-label="Opiniones de clientes">
+        <ul class="cinta__pista">
+          <li><p>Nos explicó cada paso de la herencia de mi padre sin prisas. Por fin entendimos qué estábamos firmando.</p><span>Nombre del cliente</span></li>
+          <li><p>Siempre contestaba el teléfono. En un divorcio eso vale oro.</p><span>Nombre del cliente</span></li>
+          <li><p>Hicimos el testamento en una tarde y nos quedamos muy tranquilos. Muy recomendable.</p><span>Nombre del cliente</span></li>
+          <li><p>Consiguió un acuerdo de custodia justo sin llegar a juicio. Le estaré siempre agradecida.</p><span>Nombre del cliente</span></li>
+          <li><p>Presupuesto cerrado desde el primer día y ni un euro más. Así da gusto.</p><span>Nombre del cliente</span></li>
+          <li><p>Un caso de herencia complicado entre hermanos y lo resolvió con mucha mano izquierda.</p><span>Nombre del cliente</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="preguntas" id="preguntas">
+      <div class="preguntas__lado aparece">
+        <p class="etiqueta">Preguntas frecuentes</p>
+        <h2>¿Tienes dudas? Te las resuelvo</h2>
+        <p>Si tu caso no aparece aquí, escríbeme y te respondo personalmente.</p>
+        <a class="preguntas__email" href="mailto:correo@ejemplo.com">correo@ejemplo.com</a>
+      </div>
+      <div class="acordeon aparece">
+        <details>
+          <summary>¿Necesito testamento si no tengo mucho patrimonio?</summary>
+          <p>Sí. Un testamento no es solo dinero: también sirve para nombrar tutor para tus hijos y evitar que tu familia tenga que hacer una declaración de herederos, que es más lenta y cara.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto cuesta la primera consulta?</summary>
+          <p>La primera conversación para entender tu caso es sin compromiso. Si seguimos adelante, te doy un presupuesto cerrado por escrito antes de empezar.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto tarda en tramitarse una herencia?</summary>
+          <p>Si los herederos están de acuerdo y la documentación está en orden, suele cerrarse en dos o tres meses. Recuerda que el impuesto de sucesiones tiene un plazo de seis meses desde el fallecimiento.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa si fallece alguien sin testamento?</summary>
+          <p>La ley decide quién hereda y en qué proporción. Hay que hacer una declaración de herederos ante notario o juzgado antes de poder repartir los bienes.</p>
+        </details>
+        <details>
+          <summary>¿Puedo divorciarme sin ir a juicio?</summary>
+          <p>Sí, si hay acuerdo. Un divorcio de mutuo acuerdo es más rápido, más barato y, sobre todo, menos duro para todos, especialmente si hay hijos.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contacto__caja aparece" data-inclina="suave">
+        <p class="etiqueta">Contacto</p>
+        <h2>Cuéntame tu caso</h2>
+        <p>Te respondo en menos de XX horas laborables. La primera consulta es sin compromiso.</p>
+        <div class="contacto__acciones">
+          <a class="btn btn--claro" href="https://wa.me/34000000000?text=Hola%2C%20quer%C3%ADa%20consultarte%20un%20caso" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a class="btn btn--linea" href="tel:+34000000000">Llamar al 000 000 000</a>
+        </div>
+        <dl class="contacto__datos">
+          <div><dt>Despacho</dt><dd>Dirección del despacho, código postal y [Ciudad]</dd></div>
+          <div><dt>Horario</dt><dd>Días y horario de atención</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <span class="pie__marca">NOMBRE APELLIDOS</span>
+    <p>&copy; 2026 Nombre Apellidos Abogado · <a href="legal.html">Aviso legal y privacidad</a></p>
+  </footer>
+
+  <script src="assets/vendor/lenis.min.js" defer></script>
+  <script src="app.js?v=20261025b" defer></script>
+  <script type="module" src="escena.js?v=20261025b"></script>
+</body>
+</html>

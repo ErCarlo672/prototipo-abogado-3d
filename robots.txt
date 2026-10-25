@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ercarlo672.github.io/prototipo-abogado-3d/sitemap.xml
